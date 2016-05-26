@@ -13,10 +13,27 @@
             "pattern" : "^Annotation$"
         },
         "name": {
+            "description" : "A name that can be used in the application to refer to the annotated object",
             "type": "string"
         },
         "description" : {
+            "description" : "Full description of the object",
             "type" : "string"
+        },
+        "seeAlso" : {
+            "description" : "an ID or a list of ID of others relevant structures or groups",
+            "anyOf" : [
+                {
+                    "type" : "string"
+                },
+                {
+                    "type" : "array",
+                    "minItems" : 1,
+                    "items" : {
+                        "type" : "string"
+                    }
+                }
+            ]
         }
     },
     "additionalProperties": true

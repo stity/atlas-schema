@@ -4,22 +4,28 @@
     "description": "Contains location of the source and information attached to it",
     "type": "object",
     "required": [ "source", "mimeType" ],
+    "title" : "DataSource",
     "properties": {
         "@id" : {
-            "type": "string"
+            "type": "string",
+            "description" : "Needs to be provided only if inserted in the atlas as a standalone object (ie if it's not embedded in an other object)"
         },
         "@type" : {
             "type" : "string",
-            "pattern" : "^DataSource$"
+            "pattern" : "^DataSource$",
+            "description" : "Can only be 'DataSource', Needs to be provided only if inserted in the atlas as a standalone object (ie if it's not embedded in an other object)"
         },
         "source": {
-            "type": "string"
+            "type": "string",
+            "description" : "An absolute or relative URL to the file"
         },
         "mimeType" : {
-            "type" : "string"
+            "type" : "string",
+            "description" : "mimeType matching the file"
         },
         "displayName" : {
-            "type" : "string"
+            "type" : "string",
+            "description" : "Name that can be used to refer to this file in the application"
         }
     }
 }

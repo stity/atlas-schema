@@ -13,6 +13,7 @@
             "pattern" : "^RenderOption$"
         },
         "color": {
+            "description" : "a css valid color",
             "type": "string"
         },
         "texture" : {

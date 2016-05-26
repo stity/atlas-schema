@@ -19,20 +19,47 @@
         "comment": { "type" : "string" },
         "coordinateSystem": { "type" : ["string", "object"] },
         "root": {
-            "oneOf" : [
-                { "type" : "string" },
+            "description" : "The root(s) of the atlas hierarchy (id to a group or a structure)",
+            "anyOf" : [
+                {
+                    "type" : "string",
+                    "description" : "Has to be an ID of a group or a structure"
+                },
+                { "$ref" : "https://openanatomy.org/schema/Group#"},
+                { "$ref" : "https://openanatomy.org/schema/Structure#"},
                 {
                     "type" : "array",
-                    "items" : { "type" : "string" }
+                    "items" : {
+                        "anyOf" : [
+                            { "$ref" : "https://openanatomy.org/schema/Group#"},
+                            { "$ref" : "https://openanatomy.org/schema/Structure#"},
+                            {
+                                "type" : "string",
+                                "description" : "Has to be an ID of a group or a structure"
+                            }
+                        ]
+                    }
                 }
             ]
         },
         "backgroundImage": {
             "oneOf" : [
-                { "type" : "string" },
+                {
+                    "type" : "string",
+                    "description" : "Has to be an ID of a DataSource"
+                },
+                { "$ref" : "https://openanatomy.org/schema/DataSource#"},
                 {
                     "type" : "array",
-                    "items" : { "type" : "string" }
+                    "items" : {
+                        "anyOf" : [
+                            { "$ref" : "https://openanatomy.org/schema/DataSource#"},
+                            {
+                                "type" : "string" ,
+                                "description" : "Has to be an ID of a DataSource"
+                            }
+                        ]
+                    }
                 }
             ]
         }

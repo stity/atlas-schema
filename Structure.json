@@ -12,6 +12,7 @@
             "pattern" : "^Structure$"
         },
         "annotation": {
+            "description" : "Holds any additional information, usually anatomical information",
             "anyOf": [
                 { "$ref": "https://openanatomy.org/schema/Annotation#" },
                 { "type" : "string" },
@@ -28,12 +29,14 @@
             ]
         },
         "renderOption": {
+            "description" : "Holds data useful for rendering",
             "anyOf": [
                 { "$ref": "https://openanatomy.org/schema/RenderOption#" },
                 { "type" : "string" }
             ]
         },
         "sourceSelector":  {
+            "description" : "Describes how to extract data for this structure, there can be multiple source selector if you want to attach different source to a single structure.",
             "anyOf": [
                 { "$ref": "https://openanatomy.org/schema/Selector#" },
                 { "type" : "string" },

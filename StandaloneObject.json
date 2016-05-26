@@ -6,10 +6,12 @@
     "required": [ "@id", "@type" ],
     "properties": {
         "@id" : {
-            "type": "string"
+            "type": "string",
+            "description" : "ID must be unique in the file"
         },
         "@type" : {
-            "type" : "string"
+            "type" : ["string", "array"],
+            "description" : "see specific object for further specification"
         }
     }
 }

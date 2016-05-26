@@ -1,7 +1,7 @@
 {
     "id": "https://openanatomy.org/schema/Atlas#",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description" : "An anatomy atlas",
+    "description" : "The anatomy atlas, holds all the nodes of the atlas, all the types of nodes are described in their own file",
     "type": "array",
     "minItems": 1,
     "items": {

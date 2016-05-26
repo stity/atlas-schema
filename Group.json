@@ -3,6 +3,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description" : "A group of structures or group",
     "type": "object",
+    "title" : "Group",
     "properties": {
         "@id" : {
             "type" : "string"
@@ -12,15 +13,22 @@
             "pattern" : "^Group$"
         },
         "annotation": {
+            "description" : "Holds any additional information, usually anatomical information",
             "oneOf": [
                 { "$ref": "https://openanatomy.org/schema/Annotation#" },
-                { "type" : "string" },
+                {
+                    "type" : "string",
+                    "description" : "In case it is a string, it has to be the id of an annotation object"
+                },
                 {
                     "type": "array",
                     "minItems": 1,
                     "items": {
                         "oneOf": [
-                            {"type": "string" },
+                            {
+                                "type": "string",
+                                "description" : "In case it is a string, it has to be the id of an annotation object"
+                            },
                             { "$ref": "https://openanatomy.org/schema/Annotation#" }
                         ]
                     }
@@ -28,6 +36,7 @@
             ]
         },
         "renderOption": {
+            "description" : "Holds data useful for rendering",
             "oneOf": [
                 { "$ref": "https://openanatomy.org/schema/RenderOption#" },
                 { "type" : "string" }
@@ -36,9 +45,13 @@
         "member": {
             "type": "array",
             "minItems": 1,
+            "description" : "Members of the group, it can be other groups or structures",
             "items": {
                 "oneOf": [
-                    {"type": "string" },
+                    {
+                        "type": "string",
+                        "description" : "In case it is a string, it has to be the id of a group or a structure"
+                    },
                     { "$ref": "https://openanatomy.org/schema/Group#" },
                     { "$ref": "https://openanatomy.org/schema/Structure#" }
                 ]

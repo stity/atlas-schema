@@ -16,21 +16,30 @@
                 },
                 {
                     "type" : "array",
-                    "items" : {"type" : "string"}
+                    "items" : {
+                        "type" : "string",
+                        "patterns" : "Selector$"
+                    },
+                    "description" : "Using an array allows you specify what kind of selector this selector is, highly recommended in case you are using several selectors for a single object. For example ['Selector','GeometrySelector']"
                 }
             ]
         },
         "dataSource": {
             "oneOf" : [
-                { "type" : "string" },
+                {
+                    "type" : "string",
+                    "description" : "Must be an ID of a DataSource object"
+                },
                 { "$ref" : "https://openanatomy.org/schema/DataSource#"}
             ]
         },
         "authoritative" : {
-            "type" : "boolean"
+            "type" : "boolean",
+            "description" : "Tells wether or not this piece of data should be seen as authoritative (regarding to other piece of data in this structure)"
         },
         "dataKey" : {
-            "type" : ["number", "string"]
+            "type" : ["number", "string"],
+            "description" : "Key to extract the data specific to a structure among the file"
         }
     },
     "additionalProperties": true
