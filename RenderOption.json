@@ -1,0 +1,26 @@
+{
+    "id": "https://openanatomy.org/schema/RenderOption#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Information useful to render the structure",
+    "type": "object",
+    "required": [],
+    "properties": {
+        "@id" : {
+            "type": "string"
+        },
+        "@type" : {
+            "type" : "string",
+            "pattern" : "^RenderOption$"
+        },
+        "color": {
+            "type": "string"
+        },
+        "texture" : {
+            "type" : "string"
+        },
+        "opacity" : {
+            "type" : "string",
+            "pattern" : "\\d*.?\\d*"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "id": "https://openanatomy.org/schema/Annotation#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Contains additional information about whatever node you are annotating",
+    "type": "object",
+    "required": [],
+    "properties": {
+        "@id" : {
+            "type": "string"
+        },
+        "@type" : {
+            "type" : "string",
+            "pattern" : "^Annotation$"
+        },
+        "name": {
+            "type": "string"
+        },
+        "description" : {
+            "type" : "string"
+        }
+    },
+    "additionalProperties": true
+}

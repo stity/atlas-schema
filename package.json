@@ -1,0 +1,29 @@
+{
+  "name": "atlas-schema",
+  "version": "1.0.0",
+  "description": "Package to validate the atlas structure json file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stity/atlas-schema.git"
+  },
+  "keywords": [
+    "atlas",
+    "json",
+    "schema",
+    "structure",
+    "validation"
+  ],
+  "author": "Valentin Demeusy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stity/atlas-schema/issues"
+  },
+  "homepage": "https://github.com/stity/atlas-schema#readme",
+  "dependencies": {
+    "jsonschema": "^1.1.0"
+  }
+}

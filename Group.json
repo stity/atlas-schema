@@ -1,0 +1,50 @@
+{
+    "id": "https://openanatomy.org/schema/Group#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description" : "A group of structures or group",
+    "type": "object",
+    "properties": {
+        "@id" : {
+            "type" : "string"
+        },
+        "@type" : {
+            "type" : "string",
+            "pattern" : "^Group$"
+        },
+        "annotation": {
+            "oneOf": [
+                { "$ref": "https://openanatomy.org/schema/Annotation#" },
+                { "type" : "string" },
+                {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "oneOf": [
+                            {"type": "string" },
+                            { "$ref": "https://openanatomy.org/schema/Annotation#" }
+                        ]
+                    }
+                }
+            ]
+        },
+        "renderOption": {
+            "oneOf": [
+                { "$ref": "https://openanatomy.org/schema/RenderOption#" },
+                { "type" : "string" }
+            ]
+        },
+        "member": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "oneOf": [
+                    {"type": "string" },
+                    { "$ref": "https://openanatomy.org/schema/Group#" },
+                    { "$ref": "https://openanatomy.org/schema/Structure#" }
+                ]
+            }
+        }
+    },
+    "additionalProperties": false,
+    "required": [ "member" ]
+}

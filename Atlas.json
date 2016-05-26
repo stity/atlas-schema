@@ -1,0 +1,39 @@
+{
+    "id": "https://openanatomy.org/schema/Atlas#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description" : "An anatomy atlas",
+    "type": "array",
+    "minItems": 1,
+    "items": {
+        "anyOf": [
+            { "allOf" : [
+                { "$ref": "https://openanatomy.org/schema/Group#" },
+                { "$ref": "https://openanatomy.org/schema/StandaloneObject#" }
+            ]},
+            { "allOf" : [
+                { "$ref": "https://openanatomy.org/schema/Structure#" },
+                { "$ref": "https://openanatomy.org/schema/StandaloneObject#" }
+            ]},
+            { "allOf" : [
+                { "$ref": "https://openanatomy.org/schema/Selector#" },
+                { "$ref": "https://openanatomy.org/schema/StandaloneObject#" }
+            ]},
+            { "allOf" : [
+                { "$ref": "https://openanatomy.org/schema/DataSource#" },
+                { "$ref": "https://openanatomy.org/schema/StandaloneObject#" }
+            ]},
+            { "allOf" : [
+                { "$ref": "https://openanatomy.org/schema/RenderOption#" },
+                { "$ref": "https://openanatomy.org/schema/StandaloneObject#" }
+            ]},
+            { "allOf" : [
+                { "$ref": "https://openanatomy.org/schema/Header#" },
+                { "$ref": "https://openanatomy.org/schema/StandaloneObject#" }
+            ]},
+            { "allOf" : [
+                { "$ref": "https://openanatomy.org/schema/Annotation#" },
+                { "$ref": "https://openanatomy.org/schema/StandaloneObject#" }
+            ]}
+        ]
+    }
+}

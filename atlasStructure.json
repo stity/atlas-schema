@@ -1,0 +1,1941 @@
+[
+    {
+        "@id" : "test",
+        "@type": "Header",
+        "species": "human",
+        "organ": "brain",
+        "name": "The SPL/NAC Brain Atlas",
+        "license": "?",
+        "citation": "?",
+        "version": "1",
+        "contact": "https://github.com/stity/spl-brain-atlas",
+        "comment": "",
+        "coordinateSystem": "self defined",
+        "root": [
+            "badf27fa-fb09-4c42-a15e-c3f6d60bb8d6"
+        ],
+        "backgroundImage": [
+            "3292d70e-533f-4ac3-839b-1be02158f240",
+            "1a9f0b07-3663-4ae9-abd4-9031f24c261e"
+        ]
+    },
+    {
+        "@id": "3292d70e-533f-4ac3-839b-1be02158f240",
+        "@type": "DataSource",
+        "mimeType": "application/x-nrrd",
+        "source": "../../slicer/volumes/imaging/A1_grayT1-1mm_resample.nrrd",
+        "displayName": "T1"
+    },
+    {
+        "@id": "badf27fa-fb09-4c42-a15e-c3f6d60bb8d6",
+        "@type": "Group",
+        "annotation": {
+            "name": "Brain Atlas"
+        },
+        "member": [
+            "a3831c17-9cba-4cb3-b7d2-6bcf5dc2c12e",
+            "d1b7dfc4-236b-4c93-a380-5c2a22f37265",
+            "e6dd4495-8dc1-43c0-90b3-8c3ce95b6735"
+        ]
+    },
+    {
+        "@id": "a71fca5b-5fc0-4f39-8b4c-65df7ab395a0",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_3_skin.vtk"
+    },
+    {
+        "@id": "f8c7cb6c-f0e4-439f-a08f-73053b5d8406",
+        "@type": "Structure",
+        "annotation": {
+            "name": "skin"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "a71fca5b-5fc0-4f39-8b4c-65df7ab395a0"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 3,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgba(225,189,149,0.200000)"
+        }
+    },
+    {
+        "@id": "db75c2b2-6101-4fae-a23e-43dc86bda2f0",
+        "@type": "Structure",
+        "annotation": {
+            "name": "pellucid septum"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "d393d323-53e8-448e-8e22-ff75fee26205"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 96,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(205,10,124)"
+        }
+    },
+    {
+        "@id": "188882ef-69aa-4b9b-96f7-2fb46ddb89dd",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_100_left_mammillothalamic_tract.vtk"
+    },
+    {
+        "@id": "ef70b2cd-8b9c-4ec0-8c11-98308e4c0365",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left mammillothalamic tract"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "188882ef-69aa-4b9b-96f7-2fb46ddb89dd"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 100,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(124,140,179)"
+        }
+    },
+    {
+        "@id": "5034c903-a8a2-40cb-893d-b7f8e84fd102",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_142_anterior_commissure.vtk"
+    },
+    {
+        "@id": "40ab7a9f-a2d6-4b87-8504-85512a5ee095",
+        "@type": "Structure",
+        "annotation": {
+            "name": "anterior commissure"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "5034c903-a8a2-40cb-893d-b7f8e84fd102"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 142,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(219,225,70)"
+        }
+    },
+    {
+        "@id": "c386c731-a60f-4e8a-b33d-093d4d92928d",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_200_right_mammillothalamic_tract.vtk"
+    },
+    {
+        "@id": "facb6648-867a-4e39-a39b-c2069d77c88c",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right mammillothalamic tract"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "c386c731-a60f-4e8a-b33d-093d4d92928d"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 200,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(0,49,130)"
+        }
+    },
+    {
+        "@id": "2c8bb1ac-9d3d-4a36-9c4e-bc452a6b03c8",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_216_right_optic_tract.vtk"
+    },
+    {
+        "@id": "16235266-5b7b-4ecd-87bb-f813c9032904",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right optic tract"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "2c8bb1ac-9d3d-4a36-9c4e-bc452a6b03c8"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 216,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(156,170,107)"
+        }
+    },
+    {
+        "@id": "42e6a27c-4f3a-4318-b7a0-9e6a15d013e7",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_7_white_matter_of_left_hemisphere_of_cerebellum.vtk"
+    },
+    {
+        "@id": "ccf28538-879b-4b79-a7d8-556a8b70b777",
+        "@type": "Structure",
+        "annotation": {
+            "name": "white matter of left hemisphere of cerebellum"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "42e6a27c-4f3a-4318-b7a0-9e6a15d013e7"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 7,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(179,209,119)"
+        }
+    },
+    {
+        "@id": "edd7ab83-a9ec-40c0-82c1-f6ab9fade120",
+        "@type": "Group",
+        "annotation": {
+            "name": "ventral nuclear group"
+        },
+        "member": [
+            "7acfb904-2e70-41cb-8d1b-1404c98c19ed",
+            "5b40a611-00cb-46db-8082-3e3a5577d5f6",
+            "49faf78c-4ad9-4311-b823-e8a4dca006f9",
+            "29f96e8e-ea6e-44b5-92cf-8e16da322c3f"
+        ]
+    },
+    {
+        "@id": "d9e6ad23-d69a-4eba-8473-6737c4d8073a",
+        "@type": "Group",
+        "annotation": {
+            "name": "lateral nuclear group"
+        },
+        "member": [
+            "b4659e8c-27d1-4a7c-b3c1-c2d1a6c47ec3",
+            "5a9c1f91-d4fe-486a-8b1a-bea4e10a21a0",
+            "ba56973e-ab62-4b91-8b63-45439cfb0875"
+        ]
+    },
+    {
+        "@id": "00f6e54f-7a30-4a47-8321-2ea1288ca672",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_300_left-I_II-v.vtk"
+    },
+    {
+        "@id": "0bf06cb7-7849-4f13-9a56-d255c32cfd1c",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left I II v"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "00f6e54f-7a30-4a47-8321-2ea1288ca672"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 300,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(255,59,149)"
+        }
+    },
+    {
+        "@id": "e276939a-d7f5-4412-add2-49da42a3638c",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_301_left-III-v.vtk"
+    },
+    {
+        "@id": "bf7593a5-6d47-4d99-b0aa-0083a9883f7b",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left III v"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "e276939a-d7f5-4412-add2-49da42a3638c"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 301,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(49,205,49)"
+        }
+    },
+    {
+        "@id": "93a8faf2-b906-4754-9a5e-fa0616515454",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_302_left-IV-v.vtk"
+    },
+    {
+        "@id": "77460d23-95e7-4d64-a1b4-78681e41af69",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left IV v"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "93a8faf2-b906-4754-9a5e-fa0616515454"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 302,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(209,20,130)"
+        }
+    },
+    {
+        "@id": "589434e4-be3a-44ae-9365-f7436c20d27e",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_303_left-V-v.vtk"
+    },
+    {
+        "@id": "474cf057-4b99-4376-879f-c47237b38a1b",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left V v"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "589434e4-be3a-44ae-9365-f7436c20d27e"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 303,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(209,45,35)"
+        }
+    },
+    {
+        "@id": "65c70c63-54be-45bb-bbf0-d2c55725cd3e",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_304_left-VI-v.vtk"
+    },
+    {
+        "@id": "6589735e-b0e6-417f-a936-45a37f3e0c1c",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left VI v"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "65c70c63-54be-45bb-bbf0-d2c55725cd3e"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 304,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(20,65,170)"
+        }
+    },
+    {
+        "@id": "1b48badb-aa9e-481b-83f6-c34e5d085319",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_307_left-VIIB-v.vtk"
+    },
+    {
+        "@id": "196fc5c3-d20f-4114-be46-f3bea38210f1",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left VIIB v"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "1b48badb-aa9e-481b-83f6-c34e5d085319"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 307,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(24,89,24)"
+        }
+    },
+    {
+        "@id": "1884f328-2f0b-4e4f-837d-5f79480498b0",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_1006_left_ambiens_gyrus.vtk"
+    },
+    {
+        "@id": "2183412e-04b4-4ab6-a566-52d73788ef8f",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left ambiens gyrus"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "1884f328-2f0b-4e4f-837d-5f79480498b0"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 1006,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(184,14,10)"
+        }
+    },
+    {
+        "@id": "ffbb8bcf-3099-495a-9af2-871b87b20242",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_308_left-VIIIA-v.vtk"
+    },
+    {
+        "@id": "ffb3e264-f0c4-4c7b-8a04-63beb1288a73",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left VIIIA v"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "ffbb8bcf-3099-495a-9af2-871b87b20242"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 308,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(140,59,45)"
+        }
+    },
+    {
+        "@id": "fa344d7e-cc35-4601-9c27-c0a7f3cb6907",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_309_left-VIIIB-v.vtk"
+    },
+    {
+        "@id": "6c8e0d84-a772-45ee-b5b2-ebdadfee4c3d",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left VIIIB v"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "fa344d7e-cc35-4601-9c27-c0a7f3cb6907"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 309,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(105,40,160)"
+        }
+    },
+    {
+        "@id": "53d7f976-f968-43a0-ac76-17d86d160286",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_310_left-IX-v.vtk"
+    },
+    {
+        "@id": "16aba488-0fcd-409c-b8c1-3f6f7ceb9f08",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left IX v"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "53d7f976-f968-43a0-ac76-17d86d160286"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 310,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(119,124,70)"
+        }
+    },
+    {
+        "@id": "6c3b4bb3-80cd-4447-8e17-76671bc8ff16",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_311_left-X-v.vtk"
+    },
+    {
+        "@id": "31216d6f-d1c4-40d7-bb58-f2189bff6e2c",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left X v"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "6c3b4bb3-80cd-4447-8e17-76671bc8ff16"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 311,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(179,124,124)"
+        }
+    },
+    {
+        "@id": "d0b39d09-a91f-4290-8808-eb8a61167557",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_312_left-III-m.vtk"
+    },
+    {
+        "@id": "73d0712c-251a-41c4-81f2-a1ef0d42da68",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left III m"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "d0b39d09-a91f-4290-8808-eb8a61167557"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 312,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(119,205,119)"
+        }
+    },
+    {
+        "@id": "e43f7980-08bd-413c-b0af-05bd630929c0",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_313_left-IV-m.vtk"
+    },
+    {
+        "@id": "2c9ffb30-f4d5-4356-b94e-c2bea22887ba",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left IV m"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "e43f7980-08bd-413c-b0af-05bd630929c0"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 313,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(219,110,165)"
+        }
+    },
+    {
+        "@id": "0a7d669b-fb6d-496f-8ace-3a6aa56e67f5",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_314_left-V-m.vtk"
+    },
+    {
+        "@id": "fcf99d38-ba02-4d58-9805-95c5b2a0fec5",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left V m"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "0a7d669b-fb6d-496f-8ace-3a6aa56e67f5"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 314,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(219,100,100)"
+        }
+    },
+    {
+        "@id": "1818f361-dbb8-4ec9-a479-640e66ab30d6",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_315_left-VI-m.vtk"
+    },
+    {
+        "@id": "b70e7542-2b7f-4e92-abc7-372785a6e9fa",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left VI m"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "1818f361-dbb8-4ec9-a479-640e66ab30d6"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 315,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(20,160,214)"
+        }
+    },
+    {
+        "@id": "5749dbdc-1a92-468d-9ff1-d8083e1259c1",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_316_left-VIIA_crusI-m.vtk"
+    },
+    {
+        "@id": "a7a02337-8ad3-4100-9a24-26d9e9d17e9c",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left VIIA crusI m"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "5749dbdc-1a92-468d-9ff1-d8083e1259c1"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 316,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(230,218,110)"
+        }
+    },
+    {
+        "@id": "b5b8e9d7-748e-4917-acdf-e5de5dc07c2c",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_317_left-VIIA_crusII-m.vtk"
+    },
+    {
+        "@id": "d8f2169c-c4d9-4f3b-b1ff-d8d65b282d0b",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left VIIA crusII m"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "b5b8e9d7-748e-4917-acdf-e5de5dc07c2c"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 317,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(170,100,135)"
+        }
+    },
+    {
+        "@id": "821d06f9-7bde-42a8-9d32-7918c4fff338",
+        "@type": "Group",
+        "annotation": {
+            "name": "left metathalamus"
+        },
+        "member": [
+            "466cd791-76e4-403a-809a-0fab7dc3c226",
+            "6c1f661a-9157-4ab2-8912-088b230b5e12"
+        ]
+    },
+    {
+        "@id": "11f0c5f0-8a53-49f4-96f0-c5838f390f0b",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_318_left-VIIB-m.vtk"
+    },
+    {
+        "@id": "c72009e0-aa16-4fd3-86df-8efdc6208690",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left VIIB m"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "11f0c5f0-8a53-49f4-96f0-c5838f390f0b"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 318,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(100,14,94)"
+        }
+    },
+    {
+        "@id": "4119c5b3-34e1-49ab-89b5-ebecaef31dd2",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_319_left-VIIIA-m.vtk"
+    },
+    {
+        "@id": "9273aaeb-7835-4a7f-9d80-c516b6c0cb91",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left VIIIA m"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "4119c5b3-34e1-49ab-89b5-ebecaef31dd2"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 319,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(160,110,75)"
+        }
+    },
+    {
+        "@id": "bce85d1a-1cd7-4fb8-9150-ab7f4074e6cc",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_320_left-VIIIB-m.vtk"
+    },
+    {
+        "@id": "cb0df87b-bbe8-4ab0-9c72-fb624016a400",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left VIIIB m"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "bce85d1a-1cd7-4fb8-9150-ab7f4074e6cc"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 320,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(160,110,189)"
+        }
+    },
+    {
+        "@id": "eab353c2-0f62-4e4d-a9cd-b67840611874",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_321_left-IX-m.vtk"
+    },
+    {
+        "@id": "5cc46a32-c01c-4a0a-9bc9-4c2a7dfd3997",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left IX m"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "eab353c2-0f62-4e4d-a9cd-b67840611874"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 321,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(189,189,114)"
+        }
+    },
+    {
+        "@id": "c1e64632-9a76-4c37-ad89-91e0a66779a4",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_2016_right_parahippocampal_gyrus.vtk"
+    },
+    {
+        "@id": "d36698eb-b00d-4aa9-8859-cfe7c38349e9",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right parahippocampal gyrus"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "c1e64632-9a76-4c37-ad89-91e0a66779a4"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 2016,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(244,244,23)"
+        }
+    },
+    {
+        "@id": "e4255976-41e1-4e6d-ab7f-985bc607ea92",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_323_left-V-l.vtk"
+    },
+    {
+        "@id": "63fe582e-74b2-4873-9af7-cc69f9f4df24",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left V l"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "e4255976-41e1-4e6d-ab7f-985bc607ea92"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 323,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(255,179,179)"
+        }
+    },
+    {
+        "@id": "c6f96821-58b7-480d-987a-611167e20b85",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_324_left-VI-l.vtk"
+    },
+    {
+        "@id": "a2b11581-f7af-4293-8b05-c9687bb7628a",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left VI l"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "c6f96821-58b7-480d-987a-611167e20b85"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 324,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(89,179,230)"
+        }
+    },
+    {
+        "@id": "a39dd80c-dbf2-432d-aeae-2d13594028d2",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_327_left-VIIA_crusI-l1.vtk"
+    },
+    {
+        "@id": "7a8d37c3-f61d-443a-9d53-b94c67356cc5",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left VIIA crusI l1"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "a39dd80c-dbf2-432d-aeae-2d13594028d2"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 327,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(249,249,130)"
+        }
+    },
+    {
+        "@id": "812bebd7-b397-4da1-850a-0d833b084ba2",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_328_left-VIIA_crusII-l1.vtk"
+    },
+    {
+        "@id": "a78234be-728a-4546-867a-cb2483f0c336",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left VIIA crusII l1"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "812bebd7-b397-4da1-850a-0d833b084ba2"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 328,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(221,160,219)"
+        }
+    },
+    {
+        "@id": "7493b20d-c555-4c8e-a877-67774bb164f8",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_329_left-VIIB-l.vtk"
+    },
+    {
+        "@id": "be888966-137a-4225-9daf-1d9baf239288",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left VIIB l"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "7493b20d-c555-4c8e-a877-67774bb164f8"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 329,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(149,209,179)"
+        }
+    },
+    {
+        "@id": "e2b3b806-3897-4120-ab41-5890144bf3a4",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_391_left_subthalamic_nucleus.vtk"
+    },
+    {
+        "@id": "2f6acba2-a543-4d90-94e4-b78a07a2e4c1",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left subthalamic nucleus"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "e2b3b806-3897-4120-ab41-5890144bf3a4"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 391,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(200,24,40)"
+        }
+    },
+    {
+        "@id": "fdff013a-f11a-424c-a6e5-a06c8b59b95f",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_330_left-VIIIA-l.vtk"
+    },
+    {
+        "@id": "f8d3ba63-1a44-4ab7-992f-1317bfe6f28f",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left VIIIA l"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "fdff013a-f11a-424c-a6e5-a06c8b59b95f"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 330,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(219,189,124)"
+        }
+    },
+    {
+        "@id": "52878dfb-c532-47ed-9f38-d2906198c551",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_331_left-VIIIB-l.vtk"
+    },
+    {
+        "@id": "eaa70fbe-5939-4110-8a79-28c3bccebe0f",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left VIIIB l"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "52878dfb-c532-47ed-9f38-d2906198c551"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 331,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(175,170,225)"
+        }
+    },
+    {
+        "@id": "b1b7988b-13a0-4f56-9cba-378cdd96e8d9",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_332_left-VIIA_crusI-l2.vtk"
+    },
+    {
+        "@id": "04f292a5-ef5a-46c5-85ee-260692ccfd99",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left VIIA crusI l2"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "b1b7988b-13a0-4f56-9cba-378cdd96e8d9"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 332,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(209,209,89)"
+        }
+    },
+    {
+        "@id": "ef1c9684-8059-48e3-a753-719e0658779f",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_333_left-VIIA_crusII-l2.vtk"
+    },
+    {
+        "@id": "de0a1075-0f47-4805-afd0-9862eccd8c52",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left VIIA crusII l2"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "ef1c9684-8059-48e3-a753-719e0658779f"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 333,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(244,214,255)"
+        }
+    },
+    {
+        "@id": "8dba7734-18f9-4ec3-af59-bc857a005e34",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_334_right-I_II-v.vtk"
+    },
+    {
+        "@id": "e5dacb12-7572-42bb-9e33-df11ffbb21d0",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right I II v"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "8dba7734-18f9-4ec3-af59-bc857a005e34"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 334,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(255,59,149)"
+        }
+    },
+    {
+        "@id": "b46aa821-ac0f-4c31-84b0-da29ba14752a",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_335_right-III-v.vtk"
+    },
+    {
+        "@id": "815e9a7a-63f8-44a7-961d-c5e044552151",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right III v"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "b46aa821-ac0f-4c31-84b0-da29ba14752a"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 335,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(49,205,49)"
+        }
+    },
+    {
+        "@id": "5bc2a2eb-b3ac-4eb9-b5a6-bd8d84f35239",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_336_right-IV-v.vtk"
+    },
+    {
+        "@id": "15e306ee-f1e7-476a-83b7-dcb5654bbe82",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right IV v"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "5bc2a2eb-b3ac-4eb9-b5a6-bd8d84f35239"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 336,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(209,20,130)"
+        }
+    },
+    {
+        "@id": "64361200-5cbd-46d1-b29c-2dd64b30f070",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_337_right-V-v.vtk"
+    },
+    {
+        "@id": "6a844f1a-dafe-4347-8efc-728983b32f20",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right V v"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "64361200-5cbd-46d1-b29c-2dd64b30f070"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 337,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(209,45,35)"
+        }
+    },
+    {
+        "@id": "8ba70a28-48bf-4392-8cbd-e217306be884",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_338_right-VI-v.vtk"
+    },
+    {
+        "@id": "6ae07bf3-6a0d-4f2f-bc28-c2fc6b36fb75",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right VI v"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "8ba70a28-48bf-4392-8cbd-e217306be884"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 338,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(20,65,170)"
+        }
+    },
+    {
+        "@id": "22a8f7ac-c66f-4c08-be4c-3e83b3e644c1",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_1016_left_parahippocampal_gyrus.vtk"
+    },
+    {
+        "@id": "851598d4-74bb-46bf-a4c0-60d83009e7fd",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left parahippocampal gyrus"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "22a8f7ac-c66f-4c08-be4c-3e83b3e644c1"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 1016,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(244,244,23)"
+        }
+    },
+    {
+        "@id": "fd54670c-7317-4033-834b-9151bf08e8bd",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_12_left_putamen.vtk"
+    },
+    {
+        "@id": "784f0649-8378-4087-a56e-77b399f31798",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left putamen"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "fd54670c-7317-4033-834b-9151bf08e8bd"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 12,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(175,20,130)"
+        }
+    },
+    {
+        "@id": "33ff1331-e631-4785-b07a-1cbc24eb9b4f",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_341_right-VIIB-v.vtk"
+    },
+    {
+        "@id": "b1217039-eb09-4bc5-9dd5-e68d3219f20a",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right VIIB v"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "33ff1331-e631-4785-b07a-1cbc24eb9b4f"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 341,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(24,89,24)"
+        }
+    },
+    {
+        "@id": "0b29f3d2-2797-40cd-976a-39c451a582ea",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_342_right-VIIIA-v.vtk"
+    },
+    {
+        "@id": "f67db0fd-aea8-4ec3-a58a-ed0d7a0bc674",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right VIIIA v"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "0b29f3d2-2797-40cd-976a-39c451a582ea"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 342,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(140,59,45)"
+        }
+    },
+    {
+        "@id": "05e84a3c-35d3-443b-8d05-6b65b2195eab",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_343_right-VIIIB-v.vtk"
+    },
+    {
+        "@id": "4504a8bd-35f6-4d45-9121-43f55529a497",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right VIIIB v"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "05e84a3c-35d3-443b-8d05-6b65b2195eab"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 343,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(105,40,160)"
+        }
+    },
+    {
+        "@id": "1847489f-caaf-4705-9f2a-6c732846fa66",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_344_right-IX-v.vtk"
+    },
+    {
+        "@id": "ee92173a-d786-4e04-9021-0ebd63ce26c0",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right IX v"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "1847489f-caaf-4705-9f2a-6c732846fa66"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 344,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(119,124,70)"
+        }
+    },
+    {
+        "@id": "3c8e023e-5c4b-4648-abb0-36b1e51e33bd",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_345_right-X-v.vtk"
+    },
+    {
+        "@id": "4d8a1164-1c68-4c4a-b1aa-93501ac8431e",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right X v"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "3c8e023e-5c4b-4648-abb0-36b1e51e33bd"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 345,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(179,124,124)"
+        }
+    },
+    {
+        "@id": "11842666-0bef-4592-a515-182c9554fa8b",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_346_right-III-m.vtk"
+    },
+    {
+        "@id": "5bd83b58-3996-4b88-bcef-dde8f8f9c8dd",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right III m"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "11842666-0bef-4592-a515-182c9554fa8b"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 346,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(119,205,119)"
+        }
+    },
+    {
+        "@id": "92364b53-e3f0-4a72-850b-1871ab1ab752",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_347_right-IV-m.vtk"
+    },
+    {
+        "@id": "e1bc22dc-2fa0-41a6-b6a7-79b2273f60b2",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right IV m"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "92364b53-e3f0-4a72-850b-1871ab1ab752"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 347,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(219,110,165)"
+        }
+    },
+    {
+        "@id": "9f47de38-eb30-42c2-b74b-bafcd36c74bc",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_348_right-V-m.vtk"
+    },
+    {
+        "@id": "f54e3c36-0cf4-4d49-9ac0-30ffc0a632d9",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right V m"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "9f47de38-eb30-42c2-b74b-bafcd36c74bc"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 348,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(219,100,100)"
+        }
+    },
+    {
+        "@id": "5fc312ce-26f1-4067-b666-f5d4fab45e67",
+        "@type": "DataSource",
+        "mimeType": "application/octet-stream",
+        "source": "../../slicer/models/Model_349_right-VI-m.vtk"
+    },
+    {
+        "@id": "4a9c8b50-dbaf-4f6c-a45d-bcddb24c77fc",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right VI m"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "geometrySelector"
+                ],
+                "dataSource": "5fc312ce-26f1-4067-b666-f5d4fab45e67"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "labelMapSelector"
+                ],
+                "dataKey": 349,
+                "dataSource": "a7063099-a56a-4936-9f7e-752303388212",
+                "authoritative": true
+            }
+        ],
+        "renderOption": {
+            "color": "rgb(20,160,214)"
+        }
+    }
+]

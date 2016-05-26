@@ -1,0 +1,37 @@
+{
+    "id": "https://openanatomy.org/schema/Selector#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Contains information about how and from which file, software should extract the data",
+    "type": "object",
+    "required": ["dataSource"],
+    "properties": {
+        "@id" : {
+            "type": "string"
+        },
+        "@type" : {
+            "oneOf" : [
+                {
+                    "type" : "string",
+                    "pattern" : "^Selector$"
+                },
+                {
+                    "type" : "array",
+                    "items" : {"type" : "string"}
+                }
+            ]
+        },
+        "dataSource": {
+            "oneOf" : [
+                { "type" : "string" },
+                { "$ref" : "https://openanatomy.org/schema/DataSource#"}
+            ]
+        },
+        "authoritative" : {
+            "type" : "boolean"
+        },
+        "dataKey" : {
+            "type" : ["number", "string"]
+        }
+    },
+    "additionalProperties": true
+}

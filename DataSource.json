@@ -1,0 +1,25 @@
+{
+    "id": "https://openanatomy.org/schema/DataSource#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Contains location of the source and information attached to it",
+    "type": "object",
+    "required": [ "source", "mimeType" ],
+    "properties": {
+        "@id" : {
+            "type": "string"
+        },
+        "@type" : {
+            "type" : "string",
+            "pattern" : "^DataSource$"
+        },
+        "source": {
+            "type": "string"
+        },
+        "mimeType" : {
+            "type" : "string"
+        },
+        "displayName" : {
+            "type" : "string"
+        }
+    }
+}

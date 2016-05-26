@@ -1,0 +1,55 @@
+{
+    "id": "https://openanatomy.org/schema/Structure#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description" : "Lowest level of anatomical structure",
+    "type": "object",
+    "properties": {
+        "@id" : {
+            "type" : "string"
+        },
+        "@type" : {
+            "type" : "string",
+            "pattern" : "^Structure$"
+        },
+        "annotation": {
+            "anyOf": [
+                { "$ref": "https://openanatomy.org/schema/Annotation#" },
+                { "type" : "string" },
+                {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "oneOf": [
+                            {"type": "string" },
+                            { "$ref": "https://openanatomy.org/schema/Annotation#" }
+                        ]
+                    }
+                }
+            ]
+        },
+        "renderOption": {
+            "anyOf": [
+                { "$ref": "https://openanatomy.org/schema/RenderOption#" },
+                { "type" : "string" }
+            ]
+        },
+        "sourceSelector":  {
+            "anyOf": [
+                { "$ref": "https://openanatomy.org/schema/Selector#" },
+                { "type" : "string" },
+                {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "anyOf": [
+                            {"type": "string" },
+                            { "$ref": "https://openanatomy.org/schema/Selector#" }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "additionalProperties": false,
+    "required": [ "sourceSelector" ]
+}

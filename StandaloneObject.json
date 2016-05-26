@@ -1,0 +1,15 @@
+{
+    "id": "https://openanatomy.org/schema/StandaloneObject#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Id and types are required when objects are standalone",
+    "type": "object",
+    "required": [ "@id", "@type" ],
+    "properties": {
+        "@id" : {
+            "type": "string"
+        },
+        "@type" : {
+            "type" : "string"
+        }
+    }
+}

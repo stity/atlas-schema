@@ -1,0 +1,41 @@
+{
+    "id": "https://openanatomy.org/schema/Header#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Contains general information about the atlas",
+    "type": "object",
+    "required": ["@type", "root", "species", "organ", "name", "license", "citation", "version", "contact",  "coordinateSystem", "root", "backgroundImage"],
+    "properties": {
+        "@type": {
+            "type" : "string",
+            "pattern" : "^Header$"
+        },
+        "species": { "type" : "string" },
+        "organ": { "type" : "string" },
+        "name":{ "type" : "string" },
+        "license": { "type" : "string" },
+        "citation": { "type" : "string" },
+        "version": { "type" : "string" },
+        "contact": { "type" : ["string", "array"] },
+        "comment": { "type" : "string" },
+        "coordinateSystem": { "type" : ["string", "object"] },
+        "root": {
+            "oneOf" : [
+                { "type" : "string" },
+                {
+                    "type" : "array",
+                    "items" : { "type" : "string" }
+                }
+            ]
+        },
+        "backgroundImage": {
+            "oneOf" : [
+                { "type" : "string" },
+                {
+                    "type" : "array",
+                    "items" : { "type" : "string" }
+                }
+            ]
+        }
+    },
+    "additionalProperties": true
+}
