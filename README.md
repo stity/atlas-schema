@@ -5,6 +5,9 @@ The different objects used in the format are described in JSON Schema. <br>
 `Atlas.json` is the main schema.<br>
 `atlasStructure.json` is an example of structure passing the validation.
 
+This projects requires Node.js to be installed on your computer.
+See the [official Node.js website](https://nodejs.org/en/) to install it.
+
 
 Installation
 =====
@@ -12,6 +15,8 @@ Installation
 
 ```shell
 git clone https://github.com/stity/atlas-schema
+cd atlas-schema
+npm install
 ```
 
 ###Globally
@@ -19,6 +24,7 @@ git clone https://github.com/stity/atlas-schema
 ```shell
 git clone https://github.com/stity/atlas-schema
 cd atlas-schema
+npm install
 npm install -g ./
 ```
 
