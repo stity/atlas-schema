@@ -26,6 +26,16 @@
         "displayName" : {
             "type" : "string",
             "description" : "Name that can be used to refer to this file in the application"
+        },
+        "baseURL" : {
+            "description" : "Holds any additional information, usually anatomical information",
+            "oneOf": [
+                { "$ref": "https://openanatomy.org/schema/BaseURL#" },
+                {
+                    "type" : "string",
+                    "description" : "In case it is a string, it has to be the id of a base URL object"
+                }
+            ]
         }
     }
 }

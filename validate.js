@@ -1,6 +1,7 @@
 function validate (file) {
     var schemas = [
         "StandaloneObject",
+        "BaseURL",
         "Annotation.json",
         "DataSource.json",
         "RenderOption.json",

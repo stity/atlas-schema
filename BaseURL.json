@@ -1,0 +1,21 @@
+{
+    "id": "https://openanatomy.org/schema/BaseURL#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Base URL to a data source",
+    "type": "object",
+    "required": [],
+    "properties": {
+        "@id" : {
+            "type": "string"
+        },
+        "@type" : {
+            "type" : "string",
+            "pattern" : "^BaseURL$"
+        },
+        "url": {
+            "description" : "The URL to prepend",
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

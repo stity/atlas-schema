@@ -33,6 +33,10 @@
             { "allOf" : [
                 { "$ref": "https://openanatomy.org/schema/Annotation#" },
                 { "$ref": "https://openanatomy.org/schema/StandaloneObject#" }
+            ]},
+            { "allOf" : [
+                { "$ref": "https://openanatomy.org/schema/BaseURL#" },
+                { "$ref": "https://openanatomy.org/schema/StandaloneObject#" }
             ]}
         ]
     }
